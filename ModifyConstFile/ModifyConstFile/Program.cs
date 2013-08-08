@@ -11,7 +11,7 @@ namespace ModifyConstFile
     {
         static void Main(string[] args)
         {
-            File.WriteAllText(args[0], File.ReadAllText(args[0]).Replace("DB_HOST = \"app42prod.cfdywzjrm34y.us-west-2.rds.amazonaws.com\"", "DB_HOST = \"182.73.181.76\""));
+            File.WriteAllText(args[0], File.ReadAllText(args[0]).Replace("DB_HOST = \"app42prod.cfdywzjrm34y.us-west-2.rds.amazonaws.com\"", "DB_HOST = \"192.168.1.13\""));
             File.WriteAllText(args[0], File.ReadAllText(args[0]).Replace("DB_PASSWORD = \"App42RootUser\"", "DB_PASSWORD = \"\""));
             File.WriteAllText(args[0], File.ReadAllText(args[0]).Replace("SKIP_LOOKUP = false", "SKIP_LOOKUP = true"));
         }
